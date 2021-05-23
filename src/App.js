@@ -38,9 +38,9 @@ class App extends Component {
         <h1 className="blue-text">Student Management</h1>
         <AddStudent
           addStudent={this.addStudent}
-          deleteStudent={this.deleteStudent}
+          
         />
-        <Students students={this.state.students} />
+        <Students students={this.state.students} deleteStudent={this.deleteStudent}/>
       </div>
     );
   }
